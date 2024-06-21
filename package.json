@@ -9,18 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reach/combobox": "^0.18.0",
+    "@react-google-maps/api": "^2.19.3",
+    "autoprefixer": "^10.4.19",
+    "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "use-places-autocomplete": "^4.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/google.maps": "^3.55.10",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/reach__combobox": "^0.4.0",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5"
   }
 }
