@@ -1,14 +1,9 @@
-import React from "react";
-import { GoogleMap, DirectionsRenderer, MarkerF } from "@react-google-maps/api";
+import React from 'react';
+import { GoogleMap, DirectionsRenderer } from '@react-google-maps/api';
 
 interface MapProps {
   directions: google.maps.DirectionsResult | null;
 }
-
-const mapContainerStyle: React.CSSProperties = {
-  width: "100%",
-  height: "400px",
-};
 
 const center: google.maps.LatLngLiteral = {
   lat: 20.5937,
@@ -18,7 +13,7 @@ const center: google.maps.LatLngLiteral = {
 const Map: React.FC<MapProps> = ({ directions }) => {
   return (
     <GoogleMap
-      mapContainerStyle={mapContainerStyle}
+      mapContainerClassName='w-[100%] h-[300px] md:h-[500px] border border-gray-400'
       center={center}
       zoom={5}
       options={{ streetViewControl: false, mapTypeControl: false }}

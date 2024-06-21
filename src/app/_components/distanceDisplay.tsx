@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface DistanceDisplayProps {
   distance: string;
@@ -13,14 +13,13 @@ const DistanceDisplay: React.FC<DistanceDisplayProps> = ({
 }) => {
   return (
     <div className="mt-16  border border-gray-500 rounded md:w-3/4">
-      <div className=" bg-white rounded-t-md flex flex-row justify-between p-4">
+      <div className=" bg-white rounded-t-md flex flex-row justify-between p-4 border-b border-gray-500">
         <h3 className="font-semibold">Distance</h3>
         <p className="text-2xl font-bold text-blue-600">{distance}</p>
       </div>
-
       <p className="text-xs text-black p-4">
-        The distance between <strong>{origin}</strong> and{" "}
-        <strong>{destination} </strong>via the selected route is{" "}
+        The distance between <strong>{origin}</strong> and{' '}
+        <strong>{destination} </strong>via the selected route is{' '}
         <strong>{distance}</strong>
       </p>
     </div>
